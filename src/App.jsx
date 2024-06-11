@@ -13,7 +13,7 @@ function App() {
       <Router>
         <div className="container">
           <header>
-            <h1>Movie Search</h1>
+            <h1>Chose Your Movie</h1>
             <nav>
               <NavLink to="/" exact activeClassName="active">
                 <FontAwesomeIcon icon={faHome} /> Home

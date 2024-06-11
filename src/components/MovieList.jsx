@@ -19,7 +19,8 @@ function MovieList({ genre }) {
         <div key={movie.id} className="movie">
           <img src={getPosterUrl(movie.poster_path)} alt={movie.title} />
           <h3>{movie.title}</h3>
-          <p>{movie.release_date}</p>
+          <p><strong>Release Date:</strong> {movie.release_date}</p>
+          <p>{movie.overview}</p> {/* Displaying the mini story/overview */}
         </div>
       ))}
     </div>

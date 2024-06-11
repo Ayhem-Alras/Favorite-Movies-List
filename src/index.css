@@ -138,9 +138,6 @@ input[type="submit"]:hover, button[type="submit"]:hover {
   }
 }
 
-/* index.css */
-/* index.css */
-/* index.css */
 nav {
   display: flex;
   gap: 15px;
@@ -162,7 +159,45 @@ nav a svg {
 
 nav a:hover,
 nav a.active {
-  background-color: #61dafb;
+  background-color: #156f88;
 }
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.movie {
+  background-color: #282c34;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.movie h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.movie p {
+  margin-top: 5px;
+  color: #21a1f1;
+  font-size: 1em;
+}
+
 
 
