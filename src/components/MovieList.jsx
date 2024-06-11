@@ -1,9 +1,17 @@
 // MovieList.js
-import  { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { MovieContext } from './MovieContext';
+import { useLocation } from 'react-router-dom';
 
-function MovieList() {
-  const { movies, getPosterUrl } = useContext(MovieContext);
+function MovieList({ genre }) {
+  const { movies, fetchMoviesByGenre, getPosterUrl } = useContext(MovieContext);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (genre) {
+      fetchMoviesByGenre(genre);
+    }
+  }, [genre, fetchMoviesByGenre]);
 
   return (
     <div className="movie-list">

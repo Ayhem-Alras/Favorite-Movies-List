@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #f9f9f9;
+  background-color: #282c34;
   color: #333;
   padding: 0 20px;
 }
@@ -25,7 +25,7 @@ header {
 }
 
 header h1 {
-  color:#61dafb ;
+  color:#21a1f1 ;
   margin: 0;
   font-size: 2.5em;
   font-weight: 600;
@@ -52,7 +52,7 @@ input[type="text"], input[type="search"] {
 input[type="submit"], button[type="submit"] {
   padding: 15px 25px;
   font-size: 18px;
-  background-color: #61dafb;
+  background-color: #21a1f1;
   color: white;
   border: none;
   border-radius: 0 8px 8px 0;
@@ -61,7 +61,7 @@ input[type="submit"], button[type="submit"] {
 }
 
 input[type="submit"]:hover, button[type="submit"]:hover {
-  background-color: #21a1f1;
+  background-color: #08647e;
 }
 
 .movie-list {
@@ -72,7 +72,8 @@ input[type="submit"]:hover, button[type="submit"]:hover {
 }
 
 .movie {
-  background-color: white;
+  color: #21a1f1;
+  background-color: #282c34;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -82,6 +83,7 @@ input[type="submit"]:hover, button[type="submit"]:hover {
 .movie:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #575d68;
 }
 
 .movie img {
@@ -97,8 +99,8 @@ input[type="submit"]:hover, button[type="submit"]:hover {
 
 .movie p {
   margin-top: 5px;
-  color: #666;
-  font-size: 1em;
+  color: #21a1f1;
+  font-size: 1.1em;
 }
 
 /* Responsive styles */
@@ -135,3 +137,32 @@ input[type="submit"]:hover, button[type="submit"]:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* index.css */
+/* index.css */
+/* index.css */
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+nav a svg {
+  margin-right: 8px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #61dafb;
+}
+
+
