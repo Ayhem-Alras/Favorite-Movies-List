@@ -7,9 +7,11 @@ import './index.css'; //
 function App() {
   return (
     <MovieProvider>
-      <div className="App">
-        <h1>Movie Search</h1>
-        <SearchMovieForm />
+      <div className="container">
+        <header>
+          <h1>Movie Search</h1>
+          <SearchMovieForm />
+        </header>
         <MovieList />
       </div>
     </MovieProvider>
